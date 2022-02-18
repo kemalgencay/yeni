@@ -17,7 +17,7 @@ const Page = ({
             frontmatter: { title },
           } = post
           return (
-            <li key={index} style={{ padding: "1rem" }}>
+            <li key={index} style={{ padding: ".5rem" }}>
               <Link to={`/yazi/${slug}`}>{title}</Link>
             </li>
           )

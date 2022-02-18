@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Öğrenmek yaparak olur`,
-    siteUrl: `https://www.yourdomain.tld`,
+    picture: `${__dirname}/content/images/header1.jpg`,
   },
   plugins: [
     {

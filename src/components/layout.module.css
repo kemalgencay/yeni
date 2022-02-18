@@ -1,6 +1,8 @@
 .container {
+  justify-content: center;
+  align-self: center;
   margin: auto;
-  max-width: 500px;
+  max-width: 600px;
   font-family: sans-serif;
 }
 .heading {
@@ -16,6 +18,7 @@
 }
 .nav-link-text {
   color: black;
+  text-decoration: none;
 }
 .site-title {
   font-size: 2rem;
