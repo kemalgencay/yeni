@@ -30,8 +30,8 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-plugin-sass",
-      implementation: require("node-sass"),
+      resolve: `gatsby-plugin-sass`,
+      implementation: require(`node-sass`),
     },
   ],
 }
