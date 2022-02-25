@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import * as styles from "./blog.module.scss"
 
 const Page = ({
   data: {
@@ -9,20 +10,20 @@ const Page = ({
 }) => {
   return (
     <Layout>
-      <h3>Dersler</h3>
-      <ul>
+      {/* <h3>Dersler</h3> */}
+      <ol className={styles.posts}>
         {nodes.map((post, index) => {
           const {
             slug,
             frontmatter: { title },
           } = post
           return (
-            <li key={index} style={{ padding: ".5rem", textDecoration: null }}>
+            <li key={index} className={styles.post}>
               <Link to={`/blog/${slug}`}>{title}</Link>
             </li>
           )
         })}
-      </ul>
+      </ol>
     </Layout>
   )
 }

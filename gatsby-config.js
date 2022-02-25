@@ -25,10 +25,13 @@ module.exports = {
         path: `${__dirname}/content/images/`,
       },
     },
-
     "gatsby-plugin-mdx",
     "gatsby-plugin-image",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-sass",
+      implementation: require("node-sass"),
+    },
   ],
 }

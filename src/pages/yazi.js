@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import * as styles from "./blog.module.scss"
 
 const Page = ({
   data: {
@@ -9,7 +10,6 @@ const Page = ({
 }) => {
   return (
     <Layout>
-      <h3>Görüşlerim</h3>
       <ul>
         {nodes.map((post, index) => {
           const {
@@ -17,7 +17,7 @@ const Page = ({
             frontmatter: { title },
           } = post
           return (
-            <li key={index} style={{ padding: ".5rem" }}>
+            <li key={index}>
               <Link to={`/yazi/${slug}`}>{title}</Link>
             </li>
           )
