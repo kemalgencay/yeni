@@ -10,7 +10,6 @@ const Page = ({
 }) => {
   return (
     <Layout>
-      {/* <h3>Dersler</h3> */}
       <ol className={styles.posts}>
         {nodes.map((post, index) => {
           const {
