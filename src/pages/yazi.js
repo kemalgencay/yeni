@@ -17,7 +17,7 @@ const Page = ({
             frontmatter: { title },
           } = post
           return (
-            <li key={index}>
+            <li key={index} className={styles.post}>
               <Link to={`/yazi/${slug}`}>{title}</Link>
             </li>
           )

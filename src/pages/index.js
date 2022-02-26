@@ -22,7 +22,7 @@ const IndexPage = () => {
       <p>
         <StaticImage
           alt="zuzukemal"
-          src="../../content/images/gatsby_foto.jpg"
+          src="../../content/images/gatsbyfoto.jpg"
         />
       </p>
     </Layout>
