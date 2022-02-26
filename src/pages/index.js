@@ -20,10 +20,7 @@ const IndexPage = () => {
         <p> *bilgisayar değil, bilgi soyuttur sayılamaz</p>
       </p>
       <p>
-        <StaticImage
-          alt="zuzukemal"
-          src="../../content/images/gatsbyfoto.jpg"
-        />
+        <StaticImage alt="zuzukemal" src="../../content/images/zuzukemal.jpg" />
       </p>
     </Layout>
   )
