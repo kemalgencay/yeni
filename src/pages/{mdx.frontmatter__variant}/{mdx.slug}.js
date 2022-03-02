@@ -25,6 +25,7 @@ export const query = graphql`
     mdx(id: { eq: $id }) {
       frontmatter {
         title
+        date(formatString: "DD MMMM yyyy", locale: "tr")
         variant
       }
       body

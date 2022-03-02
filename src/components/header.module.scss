@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&effect=swap");
+
 .header {
   padding: 1rem 0 3rem;
 }
@@ -6,12 +8,15 @@
   color: rebeccapurple;
   font-size: 2rem;
   text-decoration: none;
+  font-family: Lobster;
+  text-shadow: 4px 4px 4px #aaa;
+  margin: 2rem 10rem;
 }
 
 .nav-list {
   display: flex;
   list-style-type: none;
-  margin: 0;
+  margin-left: 10rem;
 }
 
 .nav-item {
@@ -27,4 +32,7 @@
 
 .active-nav-item {
   color: #333333;
+}
+.w3-lobster {
+  font-family: "Lobster", Sans-serif;
 }

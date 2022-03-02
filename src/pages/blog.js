@@ -29,11 +29,14 @@ const Page = ({
 
 export const query = graphql`
   {
-    allMdx(filter: { frontmatter: { variant: { eq: "blog" } } }) {
+    allMdx(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { variant: { eq: "blog" } } }
+    ) {
       nodes {
         slug
         frontmatter {
-          date
+          date(formatString: "DDDD MMMM yyyy", locale: "tr")
           title
           variant
         }

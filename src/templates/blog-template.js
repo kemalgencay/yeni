@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 const BlogTemplate = ({
   data: {
     mdx: {
-      frontmatter: { title },
+      frontmatter: { title, date },
       body,
     },
   },
@@ -14,6 +14,7 @@ const BlogTemplate = ({
   return (
     <Layout>
       <h3>{`${title}`}</h3>
+      <h4>{`${date}`}</h4>
       <MDXProvider>
         <MDXRenderer>{body}</MDXRenderer>
       </MDXProvider>
