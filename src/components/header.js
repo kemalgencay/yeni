@@ -9,54 +9,54 @@ const Header = () => {
       <div className={styles.header}>
         <StaticImage
           alt="bir Istanbul manzarası"
-          src="../../content/images/header1.jpg"
+          src="../../content/images/ogrenmek.jpg"
         ></StaticImage>
-        <div>
-          <h1 className={styles.title}>Öğrenmek yaparak olur</h1>
-        </div>
-        <nav>
-          <ul className={styles.navList}>
-            <li>
-              <Link
-                className={styles.navItem}
-                activeClassName={styles.activeNavItem}
-                Link
-                to="/"
-              >
-                Ana Sayfa
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.navItem}
-                activeClassName={styles.activeNavItem}
-                to="/about"
-                ti
-              >
-                Hakkimda
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.navItem}
-                activeClassName={styles.activeNavItem}
-                to="/blog"
-              >
-                Dersler
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.navItem}
-                activeClassName={styles.activeNavItem}
-                to="/yazi"
-              >
-                Görüşlerim
-              </Link>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <div>
+        <h1 className={styles.title}>Öğrenmek yaparak olur</h1>
+      </div>
+      <nav>
+        <ul className={styles.navList}>
+          <li>
+            <Link
+              className={styles.navItem}
+              activeClassName={styles.activeNavItem}
+              Link
+              to="/"
+            >
+              Ana Sayfa
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={styles.navItem}
+              activeClassName={styles.activeNavItem}
+              to="/about"
+              ti
+            >
+              Hakkimda
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={styles.navItem}
+              activeClassName={styles.activeNavItem}
+              to="/blog"
+            >
+              Dersler
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={styles.navItem}
+              activeClassName={styles.activeNavItem}
+              to="/yazi"
+            >
+              Görüşlerim
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </>
   )
 }
