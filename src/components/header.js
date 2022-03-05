@@ -11,10 +11,15 @@ const Header = () => {
           alt="bir Istanbul manzarası"
           src="../../content/images/header1.jpg"
         ></StaticImage>
+        <StaticImage
+          className={styles.picture}
+          alt="Öğrenmek yaparak olur"
+          src="../../content/images/ogrenmek.jpg"
+        ></StaticImage>
       </div>
-      <div>
+      {/* <div>
         <h1 className={styles.title}>Öğrenmek yaparak olur</h1>
-      </div>
+      </div> */}
       <nav>
         <ul className={styles.navList}>
           <li>
