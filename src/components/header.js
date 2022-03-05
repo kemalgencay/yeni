@@ -39,7 +39,7 @@ const Header = () => {
               to="/about"
               ti
             >
-              Hakkimda
+              Hakkımda
             </Link>
           </li>
           <li>
