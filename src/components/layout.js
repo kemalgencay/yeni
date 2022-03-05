@@ -7,6 +7,7 @@ import * as styles from "./layout.module.scss"
 const Layout = (props) => {
   return (
     <div className={styles.container}>
+      <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
       <div>
         <Header />
         {props.children}
