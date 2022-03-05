@@ -10,29 +10,29 @@ const Header = () => {
         <StaticImage
           alt="bir Istanbul manzarası"
           src="../../content/images/header1.jpg"
-        ></StaticImage>
+        />
         <StaticImage
           className={styles.picture}
           alt="Öğrenmek yaparak olur"
           src="../../content/images/ogrenmek.jpg"
-        ></StaticImage>
+        />
       </div>
       {/* <div>
         <h1 className={styles.title}>Öğrenmek yaparak olur</h1>
       </div> */}
-      <nav>
+      <nav className={styles.nav}>
         <ul className={styles.navList}>
-          <li>
+          <li className={styles.navListItem}> 
             <Link
-              className={styles.navItem}
-              activeClassName={styles.activeNavItem}
+              className={styles.navLink}
+              activeClassName={styles.activeNavLink}
               Link
               to="/"
             >
               Ana Sayfa
             </Link>
           </li>
-          <li>
+          <li className={styles.navListItem}> 
             <Link
               className={styles.navItem}
               activeClassName={styles.activeNavItem}
@@ -42,7 +42,7 @@ const Header = () => {
               Hakkimda
             </Link>
           </li>
-          <li>
+          <li className={styles.navListItem}> 
             <Link
               className={styles.navItem}
               activeClassName={styles.activeNavItem}
@@ -51,7 +51,7 @@ const Header = () => {
               Dersler
             </Link>
           </li>
-          <li>
+          <li className={styles.navListItem}> 
             <Link
               className={styles.navItem}
               activeClassName={styles.activeNavItem}

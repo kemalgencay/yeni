@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&effect=swap");
 
+
+$small: 576px;
+
+
 .header {
-  padding: 1rem 0 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
+
 .picture {
-  margin-left: 10rem;
-  margin-top: 2rem;
+  max-width: 20rem;
+  margin: 1rem 0rem;
+  @media screen and (min-width: $small) {
+    margin: 1rem auto;
+   }
 }
 
 .title {
@@ -18,24 +27,38 @@
   margin: 2rem 10rem;
 }
 
-.nav-list {
+.nav {
   display: flex;
-  list-style-type: none;
-  margin-left: 10rem;
+  margin: 2rem 0rem; 
+  font-size: 0.9rem;
+  @media screen and (min-width: $small) {
+    justify-content: center;
+   }
 }
 
-.nav-item {
+.nav-list {
+  gap: 16px;
+  margin: 0;
+  list-style-type: none;
+  @media screen and (min-width: $small) {
+    display: inline-flex;
+   }
+}
+
+.nav-list-item {
+  margin: 0;
+}
+
+.nav-link {
   color: #999999;
-  font-size: 0.9rem;
-  margin-right: 1.3rem;
   text-decoration: none;
 }
 
-.nav-item:hover {
+.nav-link:hover {
   color: #666666;
 }
 
-.active-nav-item {
+.active-nav-link {
   color: #333333;
 }
 .w3-lobster {
