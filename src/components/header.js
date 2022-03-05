@@ -9,7 +9,7 @@ const Header = () => {
       <div className={styles.header}>
         <StaticImage
           alt="bir Istanbul manzarası"
-          src="../../content/images/ogrenmek.jpg"
+          src="../../content/images/header1.jpg"
         ></StaticImage>
       </div>
       <div>
