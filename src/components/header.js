@@ -19,7 +19,7 @@ const Header = () => {
       </div>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
-          <li className={styles.navListLink}>
+          <li className={styles.navList}>
             <Link
               className={styles.navLink}
               activeClassName={styles.activeNavLink}
@@ -29,7 +29,7 @@ const Header = () => {
               Ana Sayfa
             </Link>
           </li>
-          <li className={styles.navListLink}>
+          <li className={styles.navList}>
             <Link
               className={styles.navLink}
               activeClassName={styles.activeNavLink}
@@ -39,7 +39,7 @@ const Header = () => {
               Hakkımda
             </Link>
           </li>
-          <li className={styles.navListLink}>
+          <li className={styles.navList}>
             <Link
               className={styles.navLink}
               activeClassName={styles.activeNavLink}
@@ -48,7 +48,7 @@ const Header = () => {
               Dersler
             </Link>
           </li>
-          <li>
+          <li className={styles.navList}>
             <Link
               className={styles.navLink}
               activeClassName={styles.activeNavLink}
