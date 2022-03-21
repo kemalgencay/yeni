@@ -1,8 +1,8 @@
-import * as React from "react"
-import Header from "./header"
-import Footer from "./footer"
-import "../pages/styles/index.scss"
-import * as styles from "./layout.module.scss"
+import * as React from 'react';
+import Header from './header';
+import Footer from './footer';
+import '../pages/styles/index.scss';
+import * as styles from './layout.module.scss';
 
 const Layout = (props) => {
   return (
@@ -14,7 +14,7 @@ const Layout = (props) => {
       </div>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
