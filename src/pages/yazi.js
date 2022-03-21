@@ -1,12 +1,12 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-import Layout from "../components/layout"
-import * as styles from "./yazi.module.scss"
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import Layout from '../components/layout';
+import * as styles from './yazi.module.scss';
 
 const Page = ({
   data: {
-    allMdx: { nodes },
-  },
+    allMdx: { nodes }
+  }
 }) => {
   return (
     <Layout>
@@ -14,25 +14,22 @@ const Page = ({
         {nodes.map((post, index) => {
           const {
             slug,
-            frontmatter: { title },
-          } = post
+            frontmatter: { title }
+          } = post;
           return (
             <li key={index} className={styles.post}>
-              <Link to={`/yazi/${slug}`}>{title}</Link>
+              <Link to={`/${slug}`}>{title}</Link>
             </li>
-          )
+          );
         })}
       </ol>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   {
-    allMdx(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { variant: { eq: "yazi" } } }
-    ) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }, filter: { frontmatter: { variant: { eq: "yazi" } } }) {
       nodes {
         slug
         frontmatter {
@@ -43,6 +40,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Page
+export default Page;
