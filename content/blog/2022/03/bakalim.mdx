@@ -2,7 +2,10 @@
 title: "Bakalım ilgnizi çekecekmi?"
 date: "2022-03-19"
 variant: blog
-localImages: ./h1.jpg
+localImages:
+  - h1.jpg
+  - image-a.jpg
+  - image-b.jpg
 ---
 
 import { getImage, GatsbyImage } from "gatsby-plugin-image"
@@ -16,6 +19,8 @@ Computer mesleğine geçmek isteyebilecek gençler için küçük bir alıştır
 Önce masaüstünde bir klasör açın: adına deneme diyebilirsiniz. (Klasör isimleri küçük harf olmalı ve Türkçe karakterler öüşçığ kullanılmamalı.)
 Klasörün içinde index.html isminde bir dosya açın. İçine şu satırları yazıp kaydedin:
 
+<GatsbyImage image={props.localImages[0]} alt="h1" />
+
 ```
 <!DOCTYPE html>
 <html>
@@ -28,7 +33,14 @@ Klasörün içinde index.html isminde bir dosya açın. İçine şu satırları 
 </html>
 ```
 
+<GatsbyImage image={props.localImages[1]} alt="image-a" />
+
 Şimdi bu index.html dosyasını kopyalayıp tarayıcınıza yapıştırın, veya sürükleyip tarayıcınıza bırakın.
 Eğer tarayıcınızda aşağıdaki gibi metin çıkıyorsa, tamam sizden computer'cu olur!
 
-<GatsbyImage alt="görüntü" image={getImage(props.localImages[0])} />
+<<<<<<< HEAD
+
+# <GatsbyImage alt="görüntü" image={getImage(props.localImages[0])} />
+
+<GatsbyImage image={props.localImages[2]} alt="image-b" />
+>>>>>>> 088a917f3927a0b1258215e9a0966fcac4f111d0
