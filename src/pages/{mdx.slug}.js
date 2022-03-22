@@ -27,8 +27,7 @@ export const query = graphql`
         title
         date(formatString: "DD MMMM yyyy", locale: "tr")
         variant
-        featuredImage {
-          childrenImageSharp {
+        localImages {
           childImageSharp {
             gatsbyImageData
           }
