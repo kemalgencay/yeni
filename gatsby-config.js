@@ -21,7 +21,16 @@ module.exports = {
     'gatsby-plugin-mdx',
     'gatsby-plugin-image',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          quality: 90,
+          formats: ['auto', 'webp', 'avif'],
+          placeholder: 'blurred'
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-sass`,
       implementation: require(`node-sass`)

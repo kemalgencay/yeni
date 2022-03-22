@@ -1,8 +1,11 @@
 ---
-title: "Bakalım ilgnizi çekecekmi?"
-date: "2022-03-19"
+title: 'Bakalım ilgnizi çekecekmi?'
+date: '2022-03-19'
 variant: blog
-featuredImage: "./h1.jpg"
+localImages:
+  - h1.jpg
+  - image-a.jpg
+  - image-b.jpg
 ---
 
 Computer mesleğine geçmek isteyebilecek gençler için küçük bir alıştırma yapalım. Öncelikle şu altyapı gerekecek:
@@ -13,6 +16,8 @@ Computer mesleğine geçmek isteyebilecek gençler için küçük bir alıştır
 
 Önce masaüstünde bir klasör açın: adına deneme diyebilirsiniz. (Klasör isimleri küçük harf olmalı ve Türkçe karakterler öüşçığ kullanılmamalı.)
 Klasörün içinde index.html isminde bir dosya açın. İçine şu satırları yazıp kaydedin:
+
+<GatsbyImage image={props.localImages[0]} alt="h1" />
 
 ```
 <!DOCTYPE html>
@@ -26,5 +31,9 @@ Klasörün içinde index.html isminde bir dosya açın. İçine şu satırları 
 </html>
 ```
 
+<GatsbyImage image={props.localImages[1]} alt="image-a" />
+
 Şimdi bu index.html dosyasını kopyalayıp tarayıcınıza yapıştırın, veya sürükleyip tarayıcınıza bırakın.
 Eğer tarayıcınızda aşağıdaki gibi metin çıkıyorsa, tamam sizden computer'cu olur!
+
+<GatsbyImage image={props.localImages[2]} alt="image-b" />
