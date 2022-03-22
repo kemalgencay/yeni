@@ -2,23 +2,25 @@ import React from 'react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import Layout from '../components/layout';
+
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const BlogTemplate = ({
   data: {
     mdx: {
-      frontmatter: { title, date, featuredImage },
+      frontmatter: { title, date, localImages },
       body
     }
   }
 }) => {
   return (
     <Layout>
-      {featuredImage ? <GatsbyImage image={getImage(featuredImage.childrenImageSharp[0])} alt={title} /> : null}
       <h3>{`${title}`}</h3>
       <h4>{`${date}`}</h4>
-      <MDXProvider>
-        <MDXRenderer>{body}</MDXRenderer>
+      <MDXProvider
+        components={{ GatsbyImage: (props) => <GatsbyImage alt={props.alt} image={getImage(props.image)} /> }}
+      >
+        <MDXRenderer localImages={localImages}>{body}</MDXRenderer>
       </MDXProvider>
     </Layout>
   );
