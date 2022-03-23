@@ -1,24 +1,24 @@
-import React, { Fragment } from "react"
-import { graphql } from "gatsby"
+import React, { Fragment } from 'react';
+import { graphql } from 'gatsby';
 
-import YaziTemplate from "../templates/yazi-template"
-import BlogTemplate from "../templates/blog-template"
+import YaziTemplate from '../templates/yazi-template';
+import BlogTemplate from '../templates/blog-template';
 
 const MdxPage = ({
   data,
   data: {
     mdx: {
-      frontmatter: { variant },
-    },
-  },
+      frontmatter: { variant }
+    }
+  }
 }) => {
   const templates = {
     yazi: <YaziTemplate data={data} />,
-    blog: <BlogTemplate data={data} />,
-  }
+    blog: <BlogTemplate data={data} />
+  };
 
-  return <Fragment>{templates[variant] ? templates[variant] : null}</Fragment>
-}
+  return <Fragment>{templates[variant] ? templates[variant] : null}</Fragment>;
+};
 
 export const query = graphql`
   query ($id: String) {
@@ -36,6 +36,6 @@ export const query = graphql`
       body
     }
   }
-`
+`;
 
-export default MdxPage
+export default MdxPage;
