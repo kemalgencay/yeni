@@ -1,20 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Öğrenmek yaparak olur`,
-    picture: `${__dirname}/src/images/header1.jpg`
+    title: 'Öğrenmek yaparak olur',
+    picture: '${__dirname}/src/images/header1.jpg'
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `blog`,
+        name: 'blog',
         path: `${__dirname}/content/`
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images/`
       }
     },
@@ -22,7 +22,7 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-plugin-sharp`,
+      resolve: 'gatsby-plugin-sharp',
       options: {
         defaults: {
           quality: 90,
@@ -32,8 +32,10 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-sass`,
-      implementation: require(`node-sass`)
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        implementation: require('node-sass')
+      }
     }
   ]
 };
