@@ -38,7 +38,7 @@ export const query = graphql`
       nodes {
         slug
         frontmatter {
-          date(formatString: "DDDD MMMM yyyy", locale: "tr")
+          date(formatString: "DD MMMM yyyy", locale: "tr")
           title
           variant
         }
