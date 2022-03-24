@@ -14,11 +14,13 @@ const Page = ({
         {nodes.map((post, index) => {
           const {
             slug,
-            frontmatter: { title },
+            frontmatter: { title, date },
           } = post
           return (
             <li key={index} className={styles.post}>
-              <Link to={`/${slug}`}>{title}</Link>
+              <Link to={`/${slug}`}>
+                {title} {date}
+              </Link>
             </li>
           )
         })}
