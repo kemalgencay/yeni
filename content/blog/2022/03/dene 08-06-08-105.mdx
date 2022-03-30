@@ -5,13 +5,14 @@ variant: blog
 ---
 
 import { useState } from "react"
-Here's a button, click it!
+
+# Here's a button, click it!
+
 export const MyDynamicButton = () => {
   const [count, setCount] = useState(0)
   return (
     <button onClick={() => setCount(count + 1)}>Clicked {count} times!</button>
   )
 }
-Click it! <MyDynamicButton /
 
->
+Click it! <MyDynamicButton />
