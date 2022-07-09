@@ -1,0 +1,21 @@
+---
+title: "@foxleigh81 Alex on Storybook"
+date: "2022-07-08"
+variant: blog
+---
+
+It's likely that you are using it incorrectly then - which is very common when starting at as Storybook themselves don't do the best job at highlighting their own best practices.
+
+You should think of writings stories in the same way as writing tests and adopt 'Storybook Driven Development', you don't create your components/pages/templates and then write stories for them. You write them IN storybook first and then use them in your app. That also means you have to adopt best practices as each component/page/template has to rely on it's own internal logic in order to function, receiving everything as props.
+
+In our projects, we actually don't write stories for pages or templates, but we do have a rule that states that pages and templates can't have any 'raw' HTML in it, everything in a page MUST be a component. The pages and templates themselves are used for layout and global state logic only.
+
+To make this easy to manage (and believe me, it's super easy!), we have 4 component levels, `` `atoms` ``, `` `molecules` ``, `` `organisms` `` and `` `partials` `` (Google Atomic Design Principles for more info on that).
+
+The first three operate exclusively on props, they have no concept of the app they are in, in fact you could easily pick up that component and drop it into another project and it will still work perfectly so long as it gets the write props (and a bit of CSS TLC).
+
+Partials are allowed to have knowledge of global state and access to things like 'formik' and suchlike but they we often don't even do that, instead we deal with the pages data in the pages file and pass that data down via props, only utilising things like context when things get complex enough to warrant it - which is surprisingly rare.
+
+Honestly, it's a superb system and has served us well for multiple projects with 40+ devs and many devs have commented that they had the easiest onboarding ever thanks to this system. I don't think I could work any other way now. We don't even write unit tests anymore as the stories ARE the unit tests thanks to a plugin called storyshots we just write the logic we need to test as a story and storyshots writes the tests for us. If all of the storyshots test pass, the component works!
+
+Comment is on this video: https://www.youtube.com/watch?v=gdlTFPebzAU&t=1s answering Chernobyl Denier.

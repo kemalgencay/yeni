@@ -2,30 +2,24 @@
   list-style-type: none;
   margin: 0;
 }
-
 .posts .post {
   margin: 1rem 0;
 }
-
 .posts .post a {
-  background-color: #e1f5e1;
-  color: 000000;
+  background-color: rgb(225, 245, 225);
+  color: 0;
   display: block;
   padding: 1rem;
   text-decoration: none;
 }
-
 .posts .post a :hover {
   background: #e4e4e4;
 }
-
 .posts .post a h2 {
   margin-bottom: 0;
 }
-
 .posts .post a p {
   color: #777777;
   font-size: 0.8rem;
   font-style: italic;
-}
-/*# sourceMappingURL=blog.module.css.map */
+}/*# sourceMappingURL=blog.module.css.map */

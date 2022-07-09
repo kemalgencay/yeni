@@ -1,19 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&effect=swap");
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .picture {
   max-width: 20rem;
   margin: 1rem 0rem;
 }
-
 @media screen and (min-width: 576px) {
   .picture {
     margin: 1rem auto;
@@ -30,18 +24,13 @@
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 2rem 0rem;
   font-size: 0.9rem;
 }
-
 @media screen and (min-width: 576px) {
   .nav {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -50,11 +39,8 @@
   margin: 0;
   list-style-type: none;
 }
-
 @media screen and (min-width: 576px) {
   .nav-list {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
   }
 }
@@ -78,5 +64,4 @@
 
 .w3-lobster {
   font-family: "Lobster", Sans-serif;
-}
-/*# sourceMappingURL=header.module.css.map */
+}/*# sourceMappingURL=header.module.css.map */
