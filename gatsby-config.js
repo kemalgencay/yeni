@@ -24,6 +24,12 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
       },
     },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/content/`,
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-transformer-sharp",
     {
