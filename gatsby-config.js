@@ -23,7 +23,8 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
       },
-    } / "gatsby-plugin-image",
+    },
+    "gatsby-plugin-image",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-sharp",
