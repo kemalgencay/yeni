@@ -18,8 +18,12 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-image",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    } / "gatsby-plugin-image",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-sharp",
