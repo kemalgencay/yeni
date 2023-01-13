@@ -5,9 +5,9 @@ variant: yazi
 ---
 
 <style>
-body {
-font: 13px/1.5 arial, helvetica, sans-serif;
-}
+/* //body {
+//font: 13px/1.5 arial, helvetica, sans-serif;
+//} */
 article {
 width: 500px;
 }
