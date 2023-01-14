@@ -18,18 +18,6 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    {
-      resolve: "gatsby-plugin-mdx",
-      options: {
-        extensions: [`.mdx`, `.md`],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-page-creator`,
-      options: {
-        path: `${__dirname}/content/`,
-      },
-    },
     "gatsby-plugin-image",
     "gatsby-transformer-sharp",
     {
